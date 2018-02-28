@@ -13,4 +13,11 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+//Route::get('ListofPharmaceuticalProducts/', function () {
+//  return view('ListofPharmaceuticalProducts.home');
+//})->name('ListofPharmaceuticalProducts.home');
+
+Route::get('ListofPharmaceuticalProducts/', 'ListofPharmaceuticalProductsController@home')->name('ListofPharmaceuticalProducts.home');
+Route::post('ListofPharmaceuticalProducts/GetMedicalList', 'ListofPharmaceuticalProductsController@getMedicalList')->name('ListofPharmaceuticalProducts.GetMedicalList');
