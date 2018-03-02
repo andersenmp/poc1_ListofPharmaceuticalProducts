@@ -3,7 +3,6 @@
 @section('content')
 <h1>Welcome to Proof of concept for List of Pharmaceutical Products in Php/Laravel</h1>
 
-
 <div class="col-sm-4">
     <h4>Requirments</h4>
     <pre>

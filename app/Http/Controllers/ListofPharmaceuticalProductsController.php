@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use \App\MedicalList;
+use App\User;
 
 class ListofPharmaceuticalProductsController extends BaseController
 {
@@ -81,7 +83,8 @@ class ListofPharmaceuticalProductsController extends BaseController
         'LINK'=> $item->link,
         'REIMBURSIBLE'=> $item->reimbursible,
         'COMMENTS'=> $item->comments,
-        'USAGE'=> $item->usage
+        'USAGE'=> $item->usage,
+        'REQUESTED_BY'=>  $item->user->first_name.' '.$item->user->last_name
       ];
     }
 
@@ -143,6 +146,7 @@ class ListofPharmaceuticalProductsController extends BaseController
     $obj->comments = $comments;
     $obj->link = $link;
     $obj->reimbursible = $reimbursible;
+    $obj->requested_by = Auth::user()->id;
     $obj->save();
 
     return response()->json($response);

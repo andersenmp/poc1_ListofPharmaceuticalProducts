@@ -15,14 +15,14 @@ class CreateMedicalListsTable extends Migration
     {
         Schema::create('medical_lists', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('name',100)->nullabe();
-          $table->string('composition',250)->nullabe();
-          $table->string('reimbursible',100)->nullabe();
-          $table->string('usage',250)->nullabe();
-          $table->string('comments',250)->nullabe();
-          $table->string('link',250)->nullabe();
+          $table->string('name',100)->nullabe(TRUE);
+          $table->string('composition',250)->nullabe(TRUE);
+          $table->string('reimbursible',100)->nullabe(TRUE);
+          $table->string('usage',250)->nullabe(TRUE);
+          $table->string('comments',250)->nullabe(TRUE);
+          $table->string('link',250)->nullabe(TRUE);
           $table->timestamps();
-          $table->integer('requested_by')->unsigned()->nullabe();
+          $table->integer('requested_by')->unsigned()->nullabe(TRUE);
           $table->foreign('requested_by')->references('id')->on('users');
         });
     }

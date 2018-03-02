@@ -66,10 +66,10 @@
             <li class="user">
                 <div data-toggle="dropdown">
                     <i class="glyphicon glyphicon-user"></i>
-                    {{--<span class="name">{{ user.get_full_name|default:user.username }}</span> <b class="caret"></b>--}}
+                    <span class="name">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}</span> <b class="caret"></b>
                 </div>
 
-                {{--{% if user.is_authenticated  %}--}}
+                @auth
                 <ul class="dropdown-menu">
                     <li class="languages has-label">
                         <label>Language</label>
@@ -84,12 +84,12 @@
                     <li><i class="glyphicon glyphicon-info-sign"></i>Privacy statement</li>
                     <li><i class="glyphicon glyphicon-info-sign"></i>Confidentiality statement</li>
                     <li>
-                        <a href="{% url 'cas_ng_logout' %}">
+                        <a href="{{ route('Cas.logout') }}">
                             <i class="glyphicon glyphicon-log-out"></i>Log out
                         </a>
                     </li>
                 </ul>
-                {{--{% endif %}--}}
+                @endauth
             </li>
         </ul>
     </nav>

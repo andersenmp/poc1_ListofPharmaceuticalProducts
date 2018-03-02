@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,13 +13,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
 
-//Route::get('ListofPharmaceuticalProducts/', function () {
-//  return view('ListofPharmaceuticalProducts.home');
-//})->name('ListofPharmaceuticalProducts.home');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/auth/login', function(){
+  cas()->authenticate();
+});
+
+Route::get('/auth/logout', [
+  'middleware' => 'cas.auth',
+  function(){
+    Auth::logout();
+    cas()->logout();
+  }
+])->name('Cas.logout');
+
 
 Route::get('ListofPharmaceuticalProducts/', 'ListofPharmaceuticalProductsController@home')
   ->name('ListofPharmaceuticalProducts.home');
@@ -33,3 +43,6 @@ Route::post('ListofPharmaceuticalProducts/UpdateMedicalList', 'ListofPharmaceuti
 
 Route::post('ListofPharmaceuticalProducts/CreateMedicalList', 'ListofPharmaceuticalProductsController@CreateMedicalList')
   ->name('ListofPharmaceuticalProducts.CreateMedicalList');
+Auth::routes();
+
+
