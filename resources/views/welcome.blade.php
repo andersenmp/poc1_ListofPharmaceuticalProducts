@@ -6,7 +6,13 @@
 <div class="col-sm-4">
     <h4>Requirments</h4>
     <pre>
-
+        "php": ">=7.1.3",
+        "doctrine/dbal": "^2.6",
+        "fideloper/proxy": "~4.0",
+        "jasig/phpcas": "1.3.x-dev",
+        "laravel/framework": "5.6.*",
+        "laravel/tinker": "~1.0",
+        "subfission/cas": "dev-master"
     </pre>
 </div>
 <div class="col-sm-4">

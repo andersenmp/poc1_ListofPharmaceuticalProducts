@@ -18,7 +18,7 @@ class CreateSentriesTable extends Migration
             $table->string('login',100)->nullabe(true);
             $table->string('first_name',100)->nullabe(true);
             $table->string('last_name',100)->nullabe(true);
-            $table->string('feature',100)->unique(true);
+            $table->string('feature',100);
             $table->string('email',100)->nullabe(true);
             $table->string('access_mode',100)->nullabe(true);
             $table->integer('org_id')->unsigned()->nullabe(true);

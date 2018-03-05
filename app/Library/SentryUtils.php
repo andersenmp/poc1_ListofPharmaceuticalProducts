@@ -21,7 +21,7 @@ class SentryUtils {
   public function __construct($user){
     $this->user = $user;
     $this->sentryFeatures =  \App\Sentry::where('login','=', $this->user->username)->get();
-    if($this->sentryFeatures === null){
+    if(!$this->sentryFeatures->count()){
       $this->first_name = $this->user->username;
       $this->last_name = 'Not in Sentry';
       $this->email = 'email@not.registred.com';
@@ -33,6 +33,9 @@ class SentryUtils {
 
   }
 
+  public function getTotalRows(){
+    return $this->sentryFeatures->count();
+  }
     /**
      * @return mixed
      */
@@ -58,12 +61,18 @@ class SentryUtils {
       if(strpos($feature,'|')){
         $features = explode('|',$feature);
         foreach ($features as $x){
-          if($this->sentryFeatures->where('feature','LIKE', '%'.$x.'%' )->exists()){
-            return true;
+          foreach ($this->sentryFeatures as $item){
+            if(stristr($item->feature, $x)){
+              return true;
+            }
           }
         }
       }else{
-        return  $this->sentryFeatures->where('feature','LIKE', '%'.$feature.'%' )->exists();
+         foreach ($this->sentryFeatures as $item){
+          if(stristr($item->feature, $feature)){
+            return true;
+          }
+        }
       }
       return false;
 

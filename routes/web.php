@@ -30,19 +30,24 @@ Route::get('/auth/logout', [
 
 
 Route::get('ListofPharmaceuticalProducts/', 'ListofPharmaceuticalProductsController@home')
-  ->name('ListofPharmaceuticalProducts.home');
+  ->name('ListofPharmaceuticalProducts.home')
+  ->middleware('sentry.guard:/ADMINISTRATOR');
 
 Route::post('ListofPharmaceuticalProducts/GetMedicalList', 'ListofPharmaceuticalProductsController@getMedicalList')
-  ->name('ListofPharmaceuticalProducts.GetMedicalList');
+  ->name('ListofPharmaceuticalProducts.GetMedicalList')
+  ->middleware('sentry.guard:/ADMINISTRATOR');;
 
 Route::post('ListofPharmaceuticalProducts/GetMedicalListDoctor', 'ListofPharmaceuticalProductsController@getMedicalListDoctor')
-  ->name('ListofPharmaceuticalProducts.GetMedicalListDoctor');
+  ->name('ListofPharmaceuticalProducts.GetMedicalListDoctor')
+  ->middleware('sentry.guard:/ADMINISTRATOR');;
 
 Route::post('ListofPharmaceuticalProducts/UpdateMedicalList', 'ListofPharmaceuticalProductsController@UpdateMedicalList')
-  ->name('ListofPharmaceuticalProducts.UpdateMedicalList');
+  ->name('ListofPharmaceuticalProducts.UpdateMedicalList')
+  ->middleware('sentry.guard:/ADMINISTRATOR');;
 
 Route::post('ListofPharmaceuticalProducts/CreateMedicalList', 'ListofPharmaceuticalProductsController@CreateMedicalList')
-  ->name('ListofPharmaceuticalProducts.CreateMedicalList');
+  ->name('ListofPharmaceuticalProducts.CreateMedicalList')
+  ->middleware('sentry.guard:/ADMINISTRATOR');;
 Auth::routes();
 
 

@@ -61,5 +61,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'cas.auth'  => 'Subfission\Cas\Middleware\CASAuth',
         'cas.guest' => 'Subfission\Cas\Middleware\RedirectCASAuthenticated',
+        'sentry.guard' => \App\Http\Middleware\SentryGuard::class,
     ];
 }
