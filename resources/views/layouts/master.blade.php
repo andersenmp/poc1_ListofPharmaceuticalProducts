@@ -100,7 +100,7 @@
 <div id="hide-menu"></div>
 
 
-@if($sentry_count)
+@if(!empty($sentry_count))
 <nav class="main">
     <div id="sticky"><i class="glyphicon glyphicon-pushpin sticky tt" title="Make this menu sticky" data-placement="right"></i></div>
 
