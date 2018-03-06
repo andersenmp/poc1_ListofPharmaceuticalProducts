@@ -13,7 +13,7 @@
 
 
     <ol class="breadcrumb">
-        <li><a href="{% url 'main:home' %}">Home</a></li>
+        <li><a href="{{ route('home') }}">Home</a></li>
         <li>CISLA</li>
         <li class="active">List of Pharmaceutical Products</li>
     </ol>
