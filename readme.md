@@ -1,6 +1,13 @@
 # poc1_ListofPharmaceuticalProducts
 This is a Proof of Concept developed with Php/Laravel
 
+# Development environment
+```
+PHP 7.1.11 
+Mariadb 5.5.56
+Composer 1.6.2
+```
+
 # Install
 ```
 $ mysql -u root -p
