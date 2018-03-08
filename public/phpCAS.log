@@ -19252,3 +19252,922 @@ AC02 .<= true
 8F2F .|    |    user is authenticated [Client.php:1332]
 8F2F .|    <= true
 8F2F .<= true
+7AD7 .START (2018-03-08 10:35:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+7AD7 .Loaded configuration:
+7AD7 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+7AD7 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+7AD7 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+7AD7 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+7AD7 .|    |    Session is not authenticated [Client.php:938]
+7AD7 .|    <= ''
+7AD7 .<= ''
+7AD7 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+7AD7 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+7AD7 .<= ''
+7AD7 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+7AD7 .<= ''
+7AD7 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+7AD7 .<= ''
+7AD7 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+7AD7 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+7AD7 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+7AD7 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+7AD7 .|    |    |    |    no user found [Client.php:1635]
+7AD7 .|    |    |    <= false
+7AD7 .|    |    |    no ticket found [Client.php:1494]
+7AD7 .|    |    <= false
+7AD7 .|    |    user is not authenticated (cache reset) [Client.php:1369]
+7AD7 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1370]
+7AD7 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1656]
+7AD7 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+7AD7 .|    |    |    |    |    Final URI: http://127.0.0.1:8000/ [Client.php:3548]
+7AD7 .|    |    |    |    <= 'http://127.0.0.1:8000/'
+7AD7 .|    |    |    <= 'https://webgate.ec.europa.eu/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2F&gateway=true'
+7AD7 .|    |    |    Redirect to : https://webgate.ec.europa.eu/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2F&gateway=true [Client.php:1663]
+7AD7 .|    |    |    exit()
+7AD7 .|    |    |    -
+7AD7 .|    |    -
+7AD7 .|    -
+AE5C .START (2018-03-08 10:35:52) phpCAS-1.3.5+ ****************** [CAS.php:468]
+AE5C .Loaded configuration:
+AE5C .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+AE5C .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+AE5C .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+AE5C .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+AE5C .|    |    Session is not authenticated [Client.php:938]
+AE5C .|    <= ''
+AE5C .<= ''
+AE5C .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+AE5C .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+AE5C .<= ''
+AE5C .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+AE5C .<= ''
+AE5C .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+AE5C .<= ''
+AE5C .=> phpCAS::checkAuthentication() [CasManager.php:293]
+AE5C .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+AE5C .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+AE5C .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+AE5C .|    |    |    |    no user found [Client.php:1635]
+AE5C .|    |    |    <= false
+AE5C .|    |    |    no ticket found [Client.php:1494]
+AE5C .|    |    <= false
+AE5C .|    <= false
+AE5C .<= false
+AE5C .=> phpCAS::forceAuthentication() [CasManager.php:165]
+AE5C .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+AE5C .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+AE5C .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+AE5C .|    |    |    |    no user found [Client.php:1635]
+AE5C .|    |    |    <= false
+AE5C .|    |    |    no ticket found [Client.php:1494]
+AE5C .|    |    <= false
+AE5C .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+AE5C .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+AE5C .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+AE5C .|    |    |    |    |    Final URI: http://127.0.0.1:8000/ [Client.php:3548]
+AE5C .|    |    |    |    <= 'http://127.0.0.1:8000/'
+AE5C .|    |    |    <= 'https://webgate.ec.europa.eu/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2F'
+AE5C .|    |    |    Redirect to : https://webgate.ec.europa.eu/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2F [Client.php:1663]
+AE5C .|    |    |    exit()
+AE5C .|    |    |    -
+AE5C .|    |    -
+AE5C .|    -
+F58D .START (2018-03-08 10:36:03) phpCAS-1.3.5+ ****************** [CAS.php:468]
+F58D .Loaded configuration:
+F58D .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+F58D .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+F58D .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+F58D .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+F58D .|    |    Session is not authenticated [Client.php:938]
+F58D .|    |    Ticket 'ST-7373330-nhKfv0zhOyUzu5BOmXZx4UbKAEZOlibmWVOVnkYEJEeA6lqvad9SlmF75YeAvLln6SeFtUBCqvPkd06YxxRPAZ-PHslUMVSXYC6iO06UxAkYy-LaqMzU5JJrR9pnzXrJnatYoi9m1WAhPSXjT7d00Qvp1G' found [Client.php:1020]
+F58D .|    <= ''
+F58D .<= ''
+F58D .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+F58D .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+F58D .<= ''
+F58D .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+F58D .<= ''
+F58D .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+F58D .<= ''
+F58D .=> phpCAS::checkAuthentication() [CasManager.php:293]
+F58D .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+F58D .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+F58D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+F58D .|    |    |    |    no user found [Client.php:1635]
+F58D .|    |    |    <= false
+F58D .|    |    |    CAS 2.0 ticket `ST-7373330-nhKfv0zhOyUzu5BOmXZx4UbKAEZOlibmWVOVnkYEJEeA6lqvad9SlmF75YeAvLln6SeFtUBCqvPkd06YxxRPAZ-PHslUMVSXYC6iO06UxAkYy-LaqMzU5JJrR9pnzXrJnatYoi9m1WAhPSXjT7d00Qvp1G' is present [Client.php:1446]
+F58D .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL, false) [Client.php:1449]
+F58D .|    |    |    |     [Client.php:3169]
+F58D .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3176]
+F58D .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+F58D .|    |    |    |    |    |    Final URI: http://127.0.0.1:8000/ [Client.php:3548]
+F58D .|    |    |    |    |    <= 'http://127.0.0.1:8000/'
+F58D .|    |    |    |    <= 'https://webgate.ec.europa.eu/cas/serviceValidate?service=http%3A%2F%2F127.0.0.1%3A8000%2F'
+F58D .|    |    |    |    => CAS_Client::_readURL('https://webgate.ec.europa.eu/cas/serviceValidate?service=http%3A%2F%2F127.0.0.1%3A8000%2F&ticket=ST-7373330-nhKfv0zhOyUzu5BOmXZx4UbKAEZOlibmWVOVnkYEJEeA6lqvad9SlmF75YeAvLln6SeFtUBCqvPkd06YxxRPAZ-PHslUMVSXYC6iO06UxAkYy-LaqMzU5JJrR9pnzXrJnatYoi9m1WAhPSXjT7d00Qvp1G', NULL, NULL, NULL) [Client.php:3191]
+F58D .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+F58D .|    |    |    |    |    |    Response Body: 
+F58D .|    |    |    |    |    |    <?xml version="1.0" encoding="utf-8"?>
+F58D .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas="https://ecas.ec.europa.eu/cas/schemas"
+F58D .|    |    |    |    |    |    					 server="EU Login PRODUCTION_EXODUS version 5.7.8.27478 - 27/02/2018 - 12:01"
+F58D .|    |    |    |    |    |    					 date="2018-03-08T11:36:06.548+01:00"
+F58D .|    |    |    |    |    |    					 version="4.16">
+F58D .|    |    |    |    |    |    	<cas:authenticationSuccess>
+F58D .|    |    |    |    |    |    		<cas:user>ipecoran</cas:user>
+F58D .|    |    |    |    |    |    		<cas:groups number="0"/>
+F58D .|    |    |    |    |    |    		<cas:strengths number="1">
+F58D .|    |    |    |    |    |    			<cas:strength>STRONG</cas:strength>
+F58D .|    |    |    |    |    |    		</cas:strengths>
+F58D .|    |    |    |    |    |    		<cas:authenticationFactors number="1">
+F58D .|    |    |    |    |    |    			<cas:moniker>ipecoran</cas:moniker>
+F58D .|    |    |    |    |    |    		</cas:authenticationFactors>
+F58D .|    |    |    |    |    |    		<cas:loginDate>2018-03-08T11:36:04.611+01:00</cas:loginDate>
+F58D .|    |    |    |    |    |    		<cas:sso>false</cas:sso>
+F58D .|    |    |    |    |    |    		<cas:ticketType>SERVICE</cas:ticketType>
+F58D .|    |    |    |    |    |    	</cas:authenticationSuccess>
+F58D .|    |    |    |    |    |    </cas:serviceResponse>
+F58D .|    |    |    |    |    |    
+F58D .|    |    |    |    |    |     [CurlRequest.php:84]
+F58D .|    |    |    |    |    <= true
+F58D .|    |    |    |    <= true
+F58D .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3261]
+F58D .|    |    |    |    |    Testing for rubycas style attributes [Client.php:3376]
+F58D .|    |    |    |    |    Attribute [strengths] = STRONG [Client.php:3387]
+F58D .|    |    |    |    |    Attribute [authenticationFactors] = ipecoran [Client.php:3387]
+F58D .|    |    |    |    |    Attribute [loginDate] = 2018-03-08T11:36:04.611+01:00 [Client.php:3387]
+F58D .|    |    |    |    |    Attribute [sso] = false [Client.php:3387]
+F58D .|    |    |    |    |    Attribute [ticketType] = SERVICE [Client.php:3387]
+F58D .|    |    |    |    <= ''
+F58D .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3273]
+F58D .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+F58D .|    |    |    |    <= true
+F58D .|    |    |    |    => CAS_Client::_renameSession('ST-7373330-nhKfv0zhOyUzu5BOmXZx4UbKAEZOlibmWVOVnkYEJEeA6lqvad9SlmF75YeAvLln6SeFtUBCqvPkd06YxxRPAZ-PHslUMVSXYC6iO06UxAkYy-LaqMzU5JJrR9pnzXrJnatYoi9m1WAhPSXjT7d00Qvp1G') [Client.php:3293]
+F58D .|    |    |    |    |    Skipping session rename since phpCAS is not handling the session. [Client.php:3698]
+F58D .|    |    |    |    <= ''
+F58D .|    |    |    <= true
+F58D .|    |    |    CAS 2.0 ticket `ST-7373330-nhKfv0zhOyUzu5BOmXZx4UbKAEZOlibmWVOVnkYEJEeA6lqvad9SlmF75YeAvLln6SeFtUBCqvPkd06YxxRPAZ-PHslUMVSXYC6iO06UxAkYy-LaqMzU5JJrR9pnzXrJnatYoi9m1WAhPSXjT7d00Qvp1G' was validated [Client.php:1452]
+F58D .|    |    |    => CAS_Client::getURL() [Client.php:1518]
+F58D .|    |    |    <= 'http://127.0.0.1:8000/'
+F58D .|    |    |    Prepare redirect to : http://127.0.0.1:8000/ [Client.php:1518]
+F58D .|    |    |    => CAS_Client::getURL() [Client.php:1520]
+F58D .|    |    |    <= 'http://127.0.0.1:8000/'
+F58D .|    |    |    exit()
+F58D .|    |    |    -
+F58D .|    |    -
+F58D .|    -
+DD52 .START (2018-03-08 10:36:04) phpCAS-1.3.5+ ****************** [CAS.php:468]
+DD52 .Loaded configuration:
+DD52 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+DD52 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+DD52 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+DD52 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+DD52 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+DD52 .|    <= ''
+DD52 .<= ''
+DD52 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+DD52 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+DD52 .<= ''
+DD52 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+DD52 .<= ''
+DD52 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+DD52 .<= ''
+DD52 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+DD52 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+DD52 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+DD52 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+DD52 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+DD52 .|    |    |    <= true
+DD52 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+DD52 .|    |    <= true
+DD52 .|    |    user is authenticated [Client.php:1332]
+DD52 .|    <= true
+DD52 .<= true
+6FE2 .START (2018-03-08 10:40:43) phpCAS-1.3.5+ ****************** [CAS.php:468]
+6FE2 .Loaded configuration:
+6FE2 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+6FE2 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+6FE2 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+6FE2 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+6FE2 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+6FE2 .|    <= ''
+6FE2 .<= ''
+6FE2 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+6FE2 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+6FE2 .<= ''
+6FE2 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+6FE2 .<= ''
+6FE2 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+6FE2 .<= ''
+6FE2 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+6FE2 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+6FE2 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+6FE2 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+6FE2 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+6FE2 .|    |    |    <= true
+6FE2 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+6FE2 .|    |    <= true
+6FE2 .|    |    user is authenticated [Client.php:1332]
+6FE2 .|    <= true
+6FE2 .<= true
+C2C0 .START (2018-03-08 10:40:43) phpCAS-1.3.5+ ****************** [CAS.php:468]
+C2C0 .Loaded configuration:
+C2C0 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+C2C0 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+C2C0 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+C2C0 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+C2C0 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+C2C0 .|    <= ''
+C2C0 .<= ''
+C2C0 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+C2C0 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+C2C0 .<= ''
+C2C0 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+C2C0 .<= ''
+C2C0 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+C2C0 .<= ''
+C2C0 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+C2C0 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+C2C0 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+C2C0 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+C2C0 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+C2C0 .|    |    |    <= true
+C2C0 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+C2C0 .|    |    <= true
+C2C0 .|    |    user is authenticated [Client.php:1332]
+C2C0 .|    <= true
+C2C0 .<= true
+1925 .START (2018-03-08 10:40:44) phpCAS-1.3.5+ ****************** [CAS.php:468]
+1925 .Loaded configuration:
+1925 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+1925 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+1925 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+1925 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+1925 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+1925 .|    <= ''
+1925 .<= ''
+1925 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+1925 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+1925 .<= ''
+1925 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+1925 .<= ''
+1925 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+1925 .<= ''
+1925 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+1925 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+1925 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+1925 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+1925 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+1925 .|    |    |    <= true
+1925 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+1925 .|    |    <= true
+1925 .|    |    user is authenticated [Client.php:1332]
+1925 .|    <= true
+1925 .<= true
+02A1 .START (2018-03-08 10:40:45) phpCAS-1.3.5+ ****************** [CAS.php:468]
+02A1 .Loaded configuration:
+02A1 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+02A1 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+02A1 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+02A1 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+02A1 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+02A1 .|    <= ''
+02A1 .<= ''
+02A1 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+02A1 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+02A1 .<= ''
+02A1 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+02A1 .<= ''
+02A1 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+02A1 .<= ''
+02A1 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+02A1 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+02A1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+02A1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+02A1 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+02A1 .|    |    |    <= true
+02A1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+02A1 .|    |    <= true
+02A1 .|    |    user is authenticated [Client.php:1332]
+02A1 .|    <= true
+02A1 .<= true
+3424 .START (2018-03-08 10:48:55) phpCAS-1.3.5+ ****************** [CAS.php:468]
+3424 .Loaded configuration:
+3424 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+3424 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+3424 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+3424 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+3424 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+3424 .|    <= ''
+3424 .<= ''
+3424 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+3424 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+3424 .<= ''
+3424 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+3424 .<= ''
+3424 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+3424 .<= ''
+3424 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+3424 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+3424 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+3424 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+3424 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+3424 .|    |    |    <= true
+3424 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+3424 .|    |    <= true
+3424 .|    |    user is authenticated [Client.php:1332]
+3424 .|    <= true
+3424 .<= true
+4BD6 .START (2018-03-08 10:50:19) phpCAS-1.3.5+ ****************** [CAS.php:468]
+4BD6 .Loaded configuration:
+4BD6 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+4BD6 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+4BD6 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+4BD6 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+4BD6 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+4BD6 .|    <= ''
+4BD6 .<= ''
+4BD6 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+4BD6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+4BD6 .<= ''
+4BD6 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+4BD6 .<= ''
+4BD6 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+4BD6 .<= ''
+4BD6 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+4BD6 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+4BD6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+4BD6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+4BD6 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+4BD6 .|    |    |    <= true
+4BD6 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+4BD6 .|    |    <= true
+4BD6 .|    |    user is authenticated [Client.php:1332]
+4BD6 .|    <= true
+4BD6 .<= true
+7804 .START (2018-03-08 10:50:29) phpCAS-1.3.5+ ****************** [CAS.php:468]
+7804 .Loaded configuration:
+7804 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+7804 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+7804 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+7804 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+7804 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+7804 .|    <= ''
+7804 .<= ''
+7804 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+7804 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+7804 .<= ''
+7804 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+7804 .<= ''
+7804 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+7804 .<= ''
+7804 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+7804 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+7804 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+7804 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+7804 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+7804 .|    |    |    <= true
+7804 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+7804 .|    |    <= true
+7804 .|    |    user is authenticated [Client.php:1332]
+7804 .|    <= true
+7804 .<= true
+42E4 .START (2018-03-08 10:50:30) phpCAS-1.3.5+ ****************** [CAS.php:468]
+42E4 .Loaded configuration:
+42E4 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+42E4 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+42E4 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+42E4 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+42E4 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+42E4 .|    <= ''
+42E4 .<= ''
+42E4 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+42E4 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+42E4 .<= ''
+42E4 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+42E4 .<= ''
+42E4 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+42E4 .<= ''
+42E4 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+42E4 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+42E4 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+42E4 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+42E4 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+42E4 .|    |    |    <= true
+42E4 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+42E4 .|    |    <= true
+42E4 .|    |    user is authenticated [Client.php:1332]
+42E4 .|    <= true
+42E4 .<= true
+DDD1 .START (2018-03-08 10:50:30) phpCAS-1.3.5+ ****************** [CAS.php:468]
+DDD1 .Loaded configuration:
+DDD1 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+DDD1 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+DDD1 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+DDD1 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+DDD1 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+DDD1 .|    <= ''
+DDD1 .<= ''
+DDD1 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+DDD1 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+DDD1 .<= ''
+DDD1 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+DDD1 .<= ''
+DDD1 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+DDD1 .<= ''
+DDD1 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+DDD1 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+DDD1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+DDD1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+DDD1 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+DDD1 .|    |    |    <= true
+DDD1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+DDD1 .|    |    <= true
+DDD1 .|    |    user is authenticated [Client.php:1332]
+DDD1 .|    <= true
+DDD1 .<= true
+3C6A .START (2018-03-08 10:50:40) phpCAS-1.3.5+ ****************** [CAS.php:468]
+3C6A .Loaded configuration:
+3C6A .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+3C6A .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+3C6A .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+3C6A .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+3C6A .|    |    Session is authenticated as: ipecoran [Client.php:936]
+3C6A .|    <= ''
+3C6A .<= ''
+3C6A .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+3C6A .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+3C6A .<= ''
+3C6A .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+3C6A .<= ''
+3C6A .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+3C6A .<= ''
+3C6A .=> phpCAS::checkAuthentication() [CasManager.php:293]
+3C6A .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+3C6A .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+3C6A .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+3C6A .|    |    |    |    user = `ipecoran' [Client.php:1622]
+3C6A .|    |    |    <= true
+3C6A .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+3C6A .|    |    <= true
+3C6A .|    |    user is authenticated [Client.php:1332]
+3C6A .|    <= true
+3C6A .<= true
+0A9D .START (2018-03-08 10:50:40) phpCAS-1.3.5+ ****************** [CAS.php:468]
+0A9D .Loaded configuration:
+0A9D .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+0A9D .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+0A9D .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+0A9D .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+0A9D .|    |    Session is authenticated as: ipecoran [Client.php:936]
+0A9D .|    <= ''
+0A9D .<= ''
+0A9D .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+0A9D .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+0A9D .<= ''
+0A9D .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+0A9D .<= ''
+0A9D .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+0A9D .<= ''
+0A9D .=> phpCAS::checkAuthentication() [CasManager.php:293]
+0A9D .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+0A9D .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+0A9D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+0A9D .|    |    |    |    user = `ipecoran' [Client.php:1622]
+0A9D .|    |    |    <= true
+0A9D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+0A9D .|    |    <= true
+0A9D .|    |    user is authenticated [Client.php:1332]
+0A9D .|    <= true
+0A9D .<= true
+261F .START (2018-03-08 10:50:40) phpCAS-1.3.5+ ****************** [CAS.php:468]
+261F .Loaded configuration:
+261F .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+261F .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+261F .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+261F .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+261F .|    |    Session is authenticated as: ipecoran [Client.php:936]
+261F .|    <= ''
+261F .<= ''
+261F .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+261F .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+261F .<= ''
+261F .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+261F .<= ''
+261F .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+261F .<= ''
+261F .=> phpCAS::checkAuthentication() [CasManager.php:293]
+261F .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+261F .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+261F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+261F .|    |    |    |    user = `ipecoran' [Client.php:1622]
+261F .|    |    |    <= true
+261F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+261F .|    |    <= true
+261F .|    |    user is authenticated [Client.php:1332]
+261F .|    <= true
+261F .<= true
+2871 .START (2018-03-08 10:50:42) phpCAS-1.3.5+ ****************** [CAS.php:468]
+2871 .Loaded configuration:
+2871 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+2871 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+2871 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+2871 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+2871 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+2871 .|    <= ''
+2871 .<= ''
+2871 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+2871 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+2871 .<= ''
+2871 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+2871 .<= ''
+2871 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+2871 .<= ''
+2871 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+2871 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+2871 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+2871 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+2871 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+2871 .|    |    |    <= true
+2871 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+2871 .|    |    <= true
+2871 .|    |    user is authenticated [Client.php:1332]
+2871 .|    <= true
+2871 .<= true
+0C04 .START (2018-03-08 10:50:42) phpCAS-1.3.5+ ****************** [CAS.php:468]
+0C04 .Loaded configuration:
+0C04 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+0C04 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+0C04 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+0C04 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+0C04 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+0C04 .|    <= ''
+0C04 .<= ''
+0C04 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+0C04 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+0C04 .<= ''
+0C04 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+0C04 .<= ''
+0C04 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+0C04 .<= ''
+0C04 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+0C04 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+0C04 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+0C04 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+0C04 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+0C04 .|    |    |    <= true
+0C04 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+0C04 .|    |    <= true
+0C04 .|    |    user is authenticated [Client.php:1332]
+0C04 .|    <= true
+0C04 .<= true
+B7EF .START (2018-03-08 10:50:42) phpCAS-1.3.5+ ****************** [CAS.php:468]
+B7EF .Loaded configuration:
+B7EF .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+B7EF .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+B7EF .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+B7EF .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+B7EF .|    |    Session is authenticated as: ipecoran [Client.php:936]
+B7EF .|    <= ''
+B7EF .<= ''
+B7EF .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+B7EF .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+B7EF .<= ''
+B7EF .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+B7EF .<= ''
+B7EF .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+B7EF .<= ''
+B7EF .=> phpCAS::checkAuthentication() [CasManager.php:293]
+B7EF .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+B7EF .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+B7EF .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+B7EF .|    |    |    |    user = `ipecoran' [Client.php:1622]
+B7EF .|    |    |    <= true
+B7EF .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+B7EF .|    |    <= true
+B7EF .|    |    user is authenticated [Client.php:1332]
+B7EF .|    <= true
+B7EF .<= true
+1194 .START (2018-03-08 10:50:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+1194 .Loaded configuration:
+1194 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+1194 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+1194 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+1194 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+1194 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+1194 .|    <= ''
+1194 .<= ''
+1194 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+1194 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+1194 .<= ''
+1194 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+1194 .<= ''
+1194 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+1194 .<= ''
+1194 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+1194 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+1194 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+1194 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+1194 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+1194 .|    |    |    <= true
+1194 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+1194 .|    |    <= true
+1194 .|    |    user is authenticated [Client.php:1332]
+1194 .|    <= true
+1194 .<= true
+8707 .START (2018-03-08 10:50:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+8707 .Loaded configuration:
+8707 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+8707 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+8707 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+8707 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+8707 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+8707 .|    <= ''
+8707 .<= ''
+8707 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+8707 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+8707 .<= ''
+8707 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+8707 .<= ''
+8707 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+8707 .<= ''
+8707 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+8707 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+8707 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+8707 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+8707 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+8707 .|    |    |    <= true
+8707 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+8707 .|    |    <= true
+8707 .|    |    user is authenticated [Client.php:1332]
+8707 .|    <= true
+8707 .<= true
+EACB .START (2018-03-08 10:50:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+EACB .Loaded configuration:
+EACB .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+EACB .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+EACB .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+EACB .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+EACB .|    |    Session is authenticated as: ipecoran [Client.php:936]
+EACB .|    <= ''
+EACB .<= ''
+EACB .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+EACB .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+EACB .<= ''
+EACB .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+EACB .<= ''
+EACB .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+EACB .<= ''
+EACB .=> phpCAS::checkAuthentication() [CasManager.php:293]
+EACB .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+EACB .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+EACB .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+EACB .|    |    |    |    user = `ipecoran' [Client.php:1622]
+EACB .|    |    |    <= true
+EACB .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+EACB .|    |    <= true
+EACB .|    |    user is authenticated [Client.php:1332]
+EACB .|    <= true
+EACB .<= true
+150E .START (2018-03-08 10:50:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+150E .Loaded configuration:
+150E .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+150E .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+150E .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+150E .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+150E .|    |    Session is authenticated as: ipecoran [Client.php:936]
+150E .|    <= ''
+150E .<= ''
+150E .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+150E .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+150E .<= ''
+150E .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+150E .<= ''
+150E .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+150E .<= ''
+150E .=> phpCAS::checkAuthentication() [CasManager.php:293]
+150E .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+150E .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+150E .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+150E .|    |    |    |    user = `ipecoran' [Client.php:1622]
+150E .|    |    |    <= true
+150E .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+150E .|    |    <= true
+150E .|    |    user is authenticated [Client.php:1332]
+150E .|    <= true
+150E .<= true
+D589 .START (2018-03-08 10:50:51) phpCAS-1.3.5+ ****************** [CAS.php:468]
+D589 .Loaded configuration:
+D589 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+D589 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+D589 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+D589 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+D589 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+D589 .|    <= ''
+D589 .<= ''
+D589 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+D589 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+D589 .<= ''
+D589 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+D589 .<= ''
+D589 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+D589 .<= ''
+D589 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+D589 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+D589 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+D589 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+D589 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+D589 .|    |    |    <= true
+D589 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+D589 .|    |    <= true
+D589 .|    |    user is authenticated [Client.php:1332]
+D589 .|    <= true
+D589 .<= true
+9425 .START (2018-03-08 10:50:52) phpCAS-1.3.5+ ****************** [CAS.php:468]
+9425 .Loaded configuration:
+9425 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+9425 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+9425 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+9425 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+9425 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+9425 .|    <= ''
+9425 .<= ''
+9425 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+9425 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+9425 .<= ''
+9425 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+9425 .<= ''
+9425 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+9425 .<= ''
+9425 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+9425 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+9425 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+9425 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+9425 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+9425 .|    |    |    <= true
+9425 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+9425 .|    |    <= true
+9425 .|    |    user is authenticated [Client.php:1332]
+9425 .|    <= true
+9425 .<= true
+A6B2 .START (2018-03-08 10:50:52) phpCAS-1.3.5+ ****************** [CAS.php:468]
+A6B2 .Loaded configuration:
+A6B2 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+A6B2 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+A6B2 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+A6B2 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+A6B2 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+A6B2 .|    <= ''
+A6B2 .<= ''
+A6B2 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+A6B2 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+A6B2 .<= ''
+A6B2 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+A6B2 .<= ''
+A6B2 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+A6B2 .<= ''
+A6B2 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+A6B2 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+A6B2 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+A6B2 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+A6B2 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+A6B2 .|    |    |    <= true
+A6B2 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+A6B2 .|    |    <= true
+A6B2 .|    |    user is authenticated [Client.php:1332]
+A6B2 .|    <= true
+A6B2 .<= true
+4D65 .START (2018-03-08 10:52:45) phpCAS-1.3.5+ ****************** [CAS.php:468]
+4D65 .Loaded configuration:
+4D65 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+4D65 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+4D65 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+4D65 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+4D65 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+4D65 .|    <= ''
+4D65 .<= ''
+4D65 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+4D65 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+4D65 .<= ''
+4D65 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+4D65 .<= ''
+4D65 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+4D65 .<= ''
+4D65 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+4D65 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+4D65 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+4D65 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+4D65 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+4D65 .|    |    |    <= true
+4D65 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+4D65 .|    |    <= true
+4D65 .|    |    user is authenticated [Client.php:1332]
+4D65 .|    <= true
+4D65 .<= true
+E1E7 .START (2018-03-08 10:54:45) phpCAS-1.3.5+ ****************** [CAS.php:468]
+E1E7 .Loaded configuration:
+E1E7 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+E1E7 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+E1E7 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+E1E7 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+E1E7 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+E1E7 .|    <= ''
+E1E7 .<= ''
+E1E7 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+E1E7 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+E1E7 .<= ''
+E1E7 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+E1E7 .<= ''
+E1E7 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+E1E7 .<= ''
+E1E7 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+E1E7 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+E1E7 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+E1E7 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+E1E7 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+E1E7 .|    |    |    <= true
+E1E7 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+E1E7 .|    |    <= true
+E1E7 .|    |    user is authenticated [Client.php:1332]
+E1E7 .|    <= true
+E1E7 .<= true
+383C .START (2018-03-08 10:55:14) phpCAS-1.3.5+ ****************** [CAS.php:468]
+383C .Loaded configuration:
+383C .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+383C .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+383C .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+383C .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+383C .|    |    Session is authenticated as: ipecoran [Client.php:936]
+383C .|    <= ''
+383C .<= ''
+383C .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+383C .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+383C .<= ''
+383C .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+383C .<= ''
+383C .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+383C .<= ''
+383C .=> phpCAS::checkAuthentication() [CasManager.php:293]
+383C .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+383C .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+383C .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+383C .|    |    |    |    user = `ipecoran' [Client.php:1622]
+383C .|    |    |    <= true
+383C .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+383C .|    |    <= true
+383C .|    |    user is authenticated [Client.php:1332]
+383C .|    <= true
+383C .<= true
+D5D5 .START (2018-03-08 10:55:15) phpCAS-1.3.5+ ****************** [CAS.php:468]
+D5D5 .Loaded configuration:
+D5D5 .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+D5D5 .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+D5D5 .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+D5D5 .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+D5D5 .|    |    Session is authenticated as: ipecoran [Client.php:936]
+D5D5 .|    <= ''
+D5D5 .<= ''
+D5D5 .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+D5D5 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+D5D5 .<= ''
+D5D5 .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+D5D5 .<= ''
+D5D5 .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+D5D5 .<= ''
+D5D5 .=> phpCAS::checkAuthentication() [CasManager.php:293]
+D5D5 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+D5D5 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+D5D5 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+D5D5 .|    |    |    |    user = `ipecoran' [Client.php:1622]
+D5D5 .|    |    |    <= true
+D5D5 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+D5D5 .|    |    <= true
+D5D5 .|    |    user is authenticated [Client.php:1332]
+D5D5 .|    <= true
+D5D5 .<= true
+E88B .START (2018-03-08 10:55:15) phpCAS-1.3.5+ ****************** [CAS.php:468]
+E88B .Loaded configuration:
+E88B .a:19:{s:12:"cas_hostname";s:20:"webgate.ec.europa.eu";s:14:"cas_real_hosts";s:14:"cas.myuniv.edu";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:39:"https://webgate.ec.europa.eu/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:0;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:0;s:14:"cas_masquerade";s:0:"";}
+E88B .=> phpCAS::client('2.0', 'webgate.ec.europa.eu', 443, '/cas', false) [CasManager.php:93]
+E88B .|    => CAS_Client::__construct('2.0', false, 'webgate.ec.europa.eu', 443, '/cas', false) [CAS.php:359]
+E88B .|    |    Starting a new session qovujqksbmfrtmu39l3ub66g6s [Client.php:932]
+E88B .|    |    Session is authenticated as: ipecoran [Client.php:936]
+E88B .|    <= ''
+E88B .<= ''
+E88B .=> phpCAS::setNoCasServerValidation() [CasManager.php:151]
+E88B .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+E88B .<= ''
+E88B .=> phpCAS::setServerLoginURL('') [CasManager.php:52]
+E88B .<= ''
+E88B .=> phpCAS::setServerLogoutURL('https://webgate.ec.europa.eu/cas/logout') [CasManager.php:59]
+E88B .<= ''
+E88B .=> phpCAS::checkAuthentication() [CasManager.php:293]
+E88B .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+E88B .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+E88B .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+E88B .|    |    |    |    user = `ipecoran' [Client.php:1622]
+E88B .|    |    |    <= true
+E88B .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+E88B .|    |    <= true
+E88B .|    |    user is authenticated [Client.php:1332]
+E88B .|    <= true
+E88B .<= true
