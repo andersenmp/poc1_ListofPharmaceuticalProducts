@@ -15,9 +15,6 @@
         "subfission/cas": "dev-master"
     </pre>
 </div>
-<div class="col-sm-4">
-    <h4>Administration</h4>
- </div>
 
 <hr class="clear" />
 
