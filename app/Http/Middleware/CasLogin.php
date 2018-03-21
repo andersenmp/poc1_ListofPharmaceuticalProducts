@@ -37,6 +37,10 @@ class CasLogin
         $user->email = $sentry->getEmail();
         $user->save();
 
+
+        session()->put('sentry_count',  $sentry->getTotalRows());
+        session()->put('menu_ListofPharmaceuticalProducts',  $sentry->hasAccessToFeature('/ADMINISTRATOR'));
+
         Auth::login($user);
 
       }

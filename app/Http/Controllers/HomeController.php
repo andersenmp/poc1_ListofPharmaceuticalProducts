@@ -24,15 +24,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $user = auth()->user();
-      $sentry = new SentryUtils($user);
-
-
-      $variables = [
-        'menu_ListofPharmaceuticalProducts' => $sentry->hasAccessToFeature('/ADMINISTRATOR'),
-        'sentry_count' => $sentry->getTotalRows()
-        ];
-
-       return view('welcome',$variables);
+//      $user = auth()->user();
+//      $sentry = new SentryUtils($user);
+//
+//
+//      $variables = [
+//        'menu_ListofPharmaceuticalProducts' => $sentry->hasAccessToFeature('/ADMINISTRATOR'),
+//        'sentry_count' => $sentry->getTotalRows()
+//        ];
+//
+//       return view('welcome',$variables);
+      return view('welcome');
     }
 }
