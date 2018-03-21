@@ -12,7 +12,6 @@ Composer 1.6.2
 $ git clone https://github.com/andersenmp/poc1_ListofPharmaceuticalProducts.git
 $ cd poc1_ListofPharmaceuticalProducts
 $ composer install
-$ composer require "subfission/cas":"dev-master"
 $ php artisan vendor:publish
 $ php artisan migrate
 $ php artisan serve
