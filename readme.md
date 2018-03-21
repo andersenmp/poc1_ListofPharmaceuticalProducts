@@ -10,7 +10,6 @@ Composer 1.6.2
 # Install
 ```
 $ git clone https://github.com/andersenmp/poc1_ListofPharmaceuticalProducts.git
-
 $ cd poc1_ListofPharmaceuticalProducts
 $ composer install
 $ composer require "subfission/cas":"dev-master"
