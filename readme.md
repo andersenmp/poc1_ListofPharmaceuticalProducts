@@ -18,3 +18,16 @@ $ php artisan vendor:publish
 $ php artisan migrate
 $ php artisan serve
 ```
+
+# Update
+```
+$ cd poc1_ListofPharmaceuticalProducts
+$ bash update_poc.sh
+```
+
+
+# Start
+```
+$ cd poc1_ListofPharmaceuticalProducts
+$ bash start_poc.sh
+```
