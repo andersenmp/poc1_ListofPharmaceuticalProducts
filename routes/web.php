@@ -35,19 +35,20 @@ Route::get('ListofPharmaceuticalProducts/', 'ListofPharmaceuticalProductsControl
 
 Route::post('ListofPharmaceuticalProducts/GetMedicalList', 'ListofPharmaceuticalProductsController@getMedicalList')
   ->name('ListofPharmaceuticalProducts.GetMedicalList')
-  ->middleware('sentry.guard:/ADMINISTRATOR');;
+  ->middleware('sentry.guard:/ADMINISTRATOR');
 
 Route::post('ListofPharmaceuticalProducts/GetMedicalListDoctor', 'ListofPharmaceuticalProductsController@getMedicalListDoctor')
   ->name('ListofPharmaceuticalProducts.GetMedicalListDoctor')
-  ->middleware('sentry.guard:/ADMINISTRATOR');;
+  ->middleware('sentry.guard:/ADMINISTRATOR');
 
 Route::post('ListofPharmaceuticalProducts/UpdateMedicalList', 'ListofPharmaceuticalProductsController@UpdateMedicalList')
   ->name('ListofPharmaceuticalProducts.UpdateMedicalList')
-  ->middleware('sentry.guard:/ADMINISTRATOR');;
+  ->middleware('sentry.guard:/ADMINISTRATOR');
 
 Route::post('ListofPharmaceuticalProducts/CreateMedicalList', 'ListofPharmaceuticalProductsController@CreateMedicalList')
   ->name('ListofPharmaceuticalProducts.CreateMedicalList')
-  ->middleware('sentry.guard:/ADMINISTRATOR');;
+  ->middleware('sentry.guard:/ADMINISTRATOR');
+
 Auth::routes();
 
 

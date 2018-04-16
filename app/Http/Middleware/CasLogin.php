@@ -38,15 +38,11 @@ class CasLogin
         $user->save();
 
 
-        session()->put('sentry_count',  $sentry->getTotalRows());
-        session()->put('menu_ListofPharmaceuticalProducts',  $sentry->hasAccessToFeature('/ADMINISTRATOR'));
+        session()->put('sentry',  $sentry);
 
         Auth::login($user);
 
       }
-
-
-
       return $next($request);
     }
 }

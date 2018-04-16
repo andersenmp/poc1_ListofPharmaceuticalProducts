@@ -8,6 +8,7 @@
     <pre>
         "require": {
             "php": ">=7.1.3",
+            "barryvdh/laravel-debugbar": "^3.1",
             "doctrine/dbal": "^2.6",
             "fideloper/proxy": "~4.0",
             "jasig/phpcas": "1.3.x-dev",

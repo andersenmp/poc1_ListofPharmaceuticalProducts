@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \App\Library\SentryUtils;
 
 class HomeController extends Controller
 {
@@ -24,16 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-//      $user = auth()->user();
-//      $sentry = new SentryUtils($user);
-//
-//
-//      $variables = [
-//        'menu_ListofPharmaceuticalProducts' => $sentry->hasAccessToFeature('/ADMINISTRATOR'),
-//        'sentry_count' => $sentry->getTotalRows()
-//        ];
-//
-//       return view('welcome',$variables);
       return view('welcome');
     }
 }
