@@ -1,2 +1,1 @@
-##php ./vendor/phpunit/phpunit/phpunit
-/usr/bin/php /home/developer/poc1_ListofPharmaceuticalProducts/vendor/phpunit/phpunit/phpunit --no-configuration /home/developer/poc1_ListofPharmaceuticalProducts/tests --teamcity
+php ./vendor/phpunit/phpunit/phpunit
